@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Video</title>
+  <style>
+    /* 페이지 전체를 드래그 영역으로 지정 */
+    body {
+      margin: 0;
+      -webkit-app-region: drag;    /* 드래그 가능한 영역 */
+      background-color: rgba(0, 0, 0, 0); /* 투명 배경 */
+    }
+    /* 영상은 클릭해도 창이 안 끌려지도록 -> pointer-events: none */
+    video {
+      pointer-events: none; 
+    }
+  </style>
+</head>
+<body>
+  <!-- 원하는 영상 파일을 여기에 두고, 무한반복 자동재생 -->
+  <img src="./myeongDance.gif" autoplay loop muted width="200" height="auto"></img>
+</body>
+</html>
